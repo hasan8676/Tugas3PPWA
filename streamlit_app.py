@@ -6,7 +6,6 @@ from sklearn.linear_model import LogisticRegression
 import re
 import nltk
 from nltk.corpus import stopwords
-from nltk.stem import PorterStemmer
 from nltk.tokenize import word_tokenize
 
 # Mengunduh paket nltk yang diperlukan
@@ -33,7 +32,6 @@ def preprocess_text(text):
     processed_text = ' '.join(words)
     
     return processed_text
-
 
 # Memuat model dan TF-IDF vectorizer yang telah dilatih
 model = joblib.load('logistic_regression_model.pkl')
