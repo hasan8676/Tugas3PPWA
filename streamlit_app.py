@@ -11,6 +11,7 @@ from nltk.tokenize import word_tokenize
 # Mengunduh paket nltk yang diperlukan
 nltk.download('punkt')
 nltk.download('stopwords')
+nltk.download('punkt_tab')
 
 # Fungsi untuk preprocessing teks
 def preprocess_text(text):
